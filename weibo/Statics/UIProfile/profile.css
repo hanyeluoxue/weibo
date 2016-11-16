@@ -1,0 +1,519 @@
+body{
+    background-color: #f5e9d3;
+    font: 12px/1.3 'Arial','Microsoft YaHei';
+}
+a{
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+.active{
+    color: white;
+    background-color: #fa7d3c;
+}
+.hide{
+    display: none;
+}
+.clearfix:after{
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+body .profile_frame{
+    width: 920px;
+    height: 1000px;
+    min-height: 1000px;
+    margin: 0 auto;
+    padding: 16px 0 0 0;
+    background-color: rgba(214, 162, 162, 0)
+}
+body .profile_frame .abstract_frame{
+    width: 920px;
+}
+body .profile_frame .abstract_frame .title_frame{
+    height: 300px;
+    background-image:url(/statics/image/headportrait_backgroundimage.jpg)
+}
+body .profile_frame .abstract_frame .title_frame .headportrait{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+body .profile_frame .abstract_frame .title_frame .username_frame{
+    margin: 10px auto 0;
+    text-align: center;
+}
+body .profile_frame .abstract_frame .title_frame .username_frame .username{
+    font: 12px/1.3 'Arial','Microsoft YaHei';
+    font-size: 22px;
+    color: #fff;
+    text-shadow: 0 0 4px rgba(0,0,0,0.5);
+    display: inline;
+}
+body .profile_frame .abstract_frame .title_frame .username_frame .sex{
+    height: 16px;
+    width: 16px;
+}
+body .profile_frame .abstract_frame .title_frame .introduce_frame{
+    margin: 10px auto 0;
+    text-align: center;
+}
+body .profile_frame .abstract_frame .title_frame .introduce_frame .introduce{
+    font: 12px/1.3 'Arial','Microsoft YaHei';
+    color: #fff;
+    text-shadow: 0 0 4px rgba(0,0,0,0.5);
+    font-size: 12px;
+}
+body .profile_frame .abstract_frame .content_frame{
+    height: 40px;
+    width: 920px;
+    background-color: white;
+}
+body .profile_frame .abstract_frame .content_frame .content_type{
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+}
+body .profile_frame .abstract_frame .content_frame .content_type .content_type0{
+    position: absolute;
+    left: 60px;;
+    line-height: 40px;
+}
+body .profile_frame .abstract_frame .content_frame .content_type .content_type1{
+    position: absolute;
+    left:240px;
+    line-height: 40px;
+}
+body .profile_frame .abstract_frame .content_frame .content_type .content_type2{
+    position: absolute;
+    line-height: 40px;
+    right: 60px;;
+}
+body .profile_frame .detail_frame {
+    margin-top: 20px;
+}
+body .profile_frame .detail_frame .profileleft_frame{
+    float: left;
+    width: 300px;
+}
+body .profile_frame .detail_frame .profileleft_frame .statistics_frame{
+    height: 60px;
+    background-color: white;
+}
+body .profile_frame .detail_frame .profileleft_frame .statistics_frame .statistics{
+    height: 34px;
+}
+body .profile_frame .detail_frame .profileleft_frame .statistics_frame .statistics .statistic{
+    float: left;
+    width: 99px;
+    border-left: solid #f2f2f5 1px;
+    text-align: center;
+}
+body .profile_frame .detail_frame .profileleft_frame .statistics_frame .statistics .statistic .statistic_num{
+    font-size: 18px;
+    font-weight: bold;
+}
+body .profile_frame .detail_frame .profileleft_frame .statistics_frame .statistics .statistic .statistic_title{
+    font-size: 12px;
+    color: #808080;
+}
+body .profile_frame .detail_frame .profileleft_frame .authentication_frame{
+    height: 156px;
+    margin-top: 20px;
+    background-color: white;
+}
+body .profile_frame .detail_frame .profileleft_frame .authentication_frame .authentication{
+    height: 36px;
+    padding: 16px 16px 10px 16px;
+    border-bottom: solid #f2f2f5 1px;
+}
+body .profile_frame .detail_frame .profileleft_frame .authentication_frame .authentication .authentication_information{
+    font-size: 12px;
+    display: block;
+    float: left;
+    line-height: 30px;
+    margin-right: 10px;
+    min-width: 58px;
+    height: 28px;
+    border-right: solid 1px #f2f2f5;
+}
+body .profile_frame .detail_frame .profileleft_frame .authentication_frame .authentication .weibo_level{
+    font-size: 12px;
+    margin-top: 10px;
+    font: 12px/1.3 'Arial','Microsoft YaHei';
+    color: #fff;
+    font-style: italic;
+    width: 25px;
+    line-height: 14px;
+    text-align: center;
+    display: inline-block;
+    background: goldenrod;
+    border-radius: 8px;
+    padding: 0 5px 0 3px;
+}
+body .profile_frame .detail_frame .profileleft_frame .authentication_frame .information_percent_frame{
+    height: 31px;
+    padding: 16px;
+    border-bottom:solid #f2f2f5 1px;
+}
+body .profile_frame .detail_frame .profileleft_frame .authentication_frame .information_percent_frame .information_percent_title{
+    font-size: 12px;
+}
+body .profile_frame .detail_frame .profileleft_frame .authentication_frame .information_percent_frame .information_percent_num{
+    font-size: 22px;
+    font-weight: bold;
+    font-style: italic;
+    margin-left: 5px;
+}
+body .profile_frame .detail_frame .profileleft_frame .authentication_frame .information_percent_frame .percentbox{
+    height: 4px;
+    background-color: #f2f2f5;
+    width: 270px;
+}
+body .profile_frame .detail_frame .profileleft_frame .authentication_frame .information_percent_frame .percent{
+    height: 4px;
+    width: 30%;
+    background-color: #fa7d3c;
+}
+body .profile_frame .detail_frame .profileleft_frame .authentication_frame .toeditinfprmation_frame{
+    text-align: center;
+    font-size: 12px;
+    margin-top: 7px;
+}
+body .profile_frame .detail_frame .profileleft_frame .minialbum_frame{
+    height: 375px;
+    margin-top: 20px;
+    background-color: white;
+}
+body .profile_frame .detail_frame .profileleft_frame .minialbum_frame .minialbum_title_frame{
+    border-bottom: solid #f2f2f5 1px;
+}
+body .profile_frame .detail_frame .profileleft_frame .minialbum_frame .minialbum_title_frame .minialbum_title{
+    line-height: 38px;
+    padding: 0 16px;
+    font-size: 14px;
+}
+body .profile_frame .detail_frame .profileleft_frame .minialbum_frame .minialbum_content_frame{
+    width: 288px;
+    height: 288px;
+    padding: 6px;
+    margin: 3px auto;
+    position: relative;
+    border-bottom: solid #f2f2f5 1px;
+}
+body .profile_frame .detail_frame .profileleft_frame .minialbum_frame .minialbum_content_frame .minialbum_content_big{
+    width: 190px;
+    height: 190px;
+    background-color: white;
+
+}
+body .profile_frame .detail_frame .profileleft_frame .minialbum_frame .minialbum_content_frame .minialbum_content_0{
+    position: absolute;
+    left: 6px;
+    top: 6px;;
+}
+body .profile_frame .detail_frame .profileleft_frame .minialbum_frame .minialbum_content_frame .minialbum_content_small{
+    width: 92px;
+    height: 92px;
+    background-color: white;
+}
+body .profile_frame .detail_frame .profileleft_frame .minialbum_frame .minialbum_content_frame .minialbum_content_1{
+    position: absolute;
+    top: 6px;;
+    right: 6px;
+}
+body .profile_frame .detail_frame .profileleft_frame .minialbum_frame .minialbum_content_frame .minialbum_content_2{
+    position: absolute;
+    top: 104px;;
+    right: 6px;
+}
+body .profile_frame .detail_frame .profileleft_frame .minialbum_frame .minialbum_content_frame .minialbum_content_3{
+    position: absolute;
+    bottom:6px;
+    left: 6px;
+}
+body .profile_frame .detail_frame .profileleft_frame .minialbum_frame .minialbum_content_frame .minialbum_content_4{
+    position: absolute;
+    bottom: 6px;;
+    left: 104px;
+}
+body .profile_frame .detail_frame .profileleft_frame .minialbum_frame .minialbum_content_frame .minialbum_content_5{
+    position: absolute;
+    bottom:6px;
+    right: 6px;
+}
+body .profile_frame .detail_frame .profileleft_frame .minialbum_frame .toalbum_frame{
+    text-align: center;
+    font-size: 12px;
+    margin-top: 7px;
+}
+body .profile_frame .detail_frame .profileleft_frame .minifavor_frame{
+    height: 180px;
+    background-color: white;
+    margin-top: 20px;
+}
+body .profile_frame .detail_frame .profileleft_frame .minifavor_frame .minifavor_title_frame{
+    border-bottom: solid #f2f2f5 1px;
+}
+body .profile_frame .detail_frame .profileleft_frame .minifavor_frame .minifavor_title_frame .minifavor_title{
+    line-height: 38px;
+    padding: 0 16px;
+    font-size: 14px;
+}
+body .profile_frame .detail_frame .profileleft_frame .minifavor_frame .minifavor_content_frame{
+    padding: 6px;
+    height: 104px;
+    border-bottom: solid #f2f2f5 1px;
+}
+body .profile_frame .detail_frame .profileleft_frame .minifavor_frame .minifavor_content_frame .minifavor_pic{
+    width: 92px;
+    height: 92px;
+    float: left;
+}
+body .profile_frame .detail_frame .profileleft_frame .minifavor_frame .minifavor_content_frame .minifavor_content{
+    float: left;
+    width: 185px;
+    height: 87px;
+    padding: 3px;
+    background-color: #f2f2f5;
+    margin-left: 5px;
+}
+body .profile_frame .detail_frame .profileleft_frame .minifavor_frame .tofavor_frame{
+    text-align: center;
+    font-size: 12px;
+    margin-top: 7px;
+}
+body .profile_frame .detail_frame .profileleft_frame .minifavor_frame .minifavor_content_frame .minifavor_content .minifavor_user{
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 16px;
+    margin: 3px 0;
+}
+body .profile_frame .detail_frame .profileleft_frame .minifavor_frame .minifavor_content_frame .minifavor_content .minifavor_content_detail{
+    font-size: 12px;
+    margin-top: 10px;
+    line-height: 18px
+}
+body .profile_frame .detail_frame .mybloglist_frame{
+    float: right;
+    width: 600px;
+}
+body .profile_frame .detail_frame .mybloglist_frame .category_frame{
+    height: 38px;
+    background-color: white;
+
+}
+body .profile_frame .detail_frame .mybloglist_frame .category_frame .category{
+    float: left;
+    width: 270px;
+    height: 38px;
+}
+body .profile_frame .detail_frame .mybloglist_frame .category_frame .category .categoryitem{
+    font: 12px/1.3 'Arial','Microsoft YaHei';
+    line-height: 38px;
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+}
+body .profile_frame .detail_frame .mybloglist_frame .category_frame .mybolg_search{
+    float: right;
+    height: 38px;
+    width: 180px;
+    position: relative;
+}
+body .profile_frame .detail_frame .mybloglist_frame .category_frame .mybolg_search .mybolg_search_box{
+    width: 175px;
+    line-height: 32px;
+    display: block;
+    position: absolute;
+    left: 0;
+    top:0;
+}
+body .profile_frame .detail_frame .mybloglist_frame .category_frame .mybolg_search .mybolg_search_button{
+    height: 38px;
+    width: 30px;
+    display: block;
+    position: absolute;
+    cursor: pointer;
+    right: 0;
+    top:0;
+}
+body .profile_frame .detail_frame .mybloglist_frame .category_frame .mybolg_search .mybolg_search_morebutton{
+    height: 38px;
+    width: 30px;
+    display: block;
+    position: absolute;
+    right: 29px;
+    cursor: pointer;
+    top:0;
+}
+body .profile_frame .detail_frame .mybloglist_frame .myweibolist{
+    margin-top: 20px;
+    min-height: 350px;
+}
+body .profile_frame .detail_frame .mybloglist_frame .myweibolist .myweibo{
+    padding: 20px;
+    width: 560px;
+    background-color: white;
+    margin-top: 10px;
+}
+body .profile_frame .detail_frame .mybloglist_frame .myweibolist .myweibo .myweibo_content{
+}
+body .profile_frame .detail_frame .mybloglist_frame .myweibolist .myweibo .myweibo_content .myweibo_picture{
+    height: 50px;
+    width: 50px;
+    float: left;
+}
+body .profile_frame .detail_frame .mybloglist_frame .myweibolist .myweibo .myweibo_content .myweibo_detail{
+    width: 500px;
+    float: left;
+    margin-left: 5px;
+}
+body .profile_frame .detail_frame .mybloglist_frame .myweibolist .myweibo .myweibo_content .myweibo_detail .myweibo_detail_title{
+    font-weight: 700;
+    font: 14px/1.3 'Arial','Microsoft YaHei';
+}
+body .profile_frame .detail_frame .mybloglist_frame .myweibolist .myweibo  .myweibo_content.myweibo_detail .myweibo_detail_information{
+    font: 12px/1.3 'Arial','Microsoft YaHei';
+    margin-top: 5px;
+}
+body .profile_frame .detail_frame .mybloglist_frame .myweibolist .myweibo .myweibo_content .myweibo_detail .myweibo_detail_content{
+    font: 14px/1.3 'Arial','Microsoft YaHei';
+    margin-top: 5px;
+}
+body .profile_frame .detail_frame .mybloglist_frame .myweibolist .myweibo .myweibo_content .myweibo_detail .myweibo_detail_picture{
+    margin-top: 10px;
+}
+body .profile_frame .detail_frame .mybloglist_frame .myweibolist .myweibo .myweibo_function{
+    margin-top: 5px;
+    line-height: 38px;
+}
+body .profile_frame .detail_frame .mybloglist_frame .myweibolist .myweibo .myweibo_function .myweibo_function_item0{
+    width: 138px;
+    text-align: center;
+    float: left;
+    border-right: solid #f2f2f5 1px;
+    color: grey;
+}
+body .profile_frame .detail_frame .mybloglist_frame .myweibolist .myweibo .myweibo_function .myweibo_function_item1{
+    width: 138px;
+    text-align: center;
+    float: left;
+    color: grey;
+}
+body .profile_frame .detail_frame .mybloglist_frame .pagination_frame{
+    height: 35px;
+    margin-top: 20px;
+    padding: 4px 0;
+    background-color: white;
+}
+body .profile_frame .detail_frame .mybloglist_frame .pagination_frame .pagination_select{
+    width: 259px;
+    padding: 6px 20px;
+    border-right: solid #f2f2f5 1px;
+    float: left;
+    height: 24px;
+    font: 14px/1.3 'Arial','Microsoft YaHei';
+    text-align: right;
+    color: grey;
+}
+body .profile_frame .detail_frame .mybloglist_frame .pagination_frame .pagination_next{
+    width: 260px;
+    padding: 6px 20px;
+    float: left;
+    height: 24px;
+    font: 14px/1.3 'Arial','Microsoft YaHei';
+    text-align: left;
+    color: grey;
+}
+body .profile_frame .my_album_frame{
+    margin-top: 20px;
+    background-color: white;
+    padding: 20px;
+}
+body .profile_frame .my_album_frame .my_album_item{
+    width: 200px;
+    height: 160px;
+    float: left;
+    margin: 0 8px 20px;
+}
+body .profile_frame .my_follow_frame{
+    margin-top: 20px;
+    height: 200px;
+}
+body .profile_frame .my_follow_frame .follow_left{
+    float: left;
+    height: 450px;
+    width: 311px;
+    background-color: white;
+}
+body .profile_frame .my_follow_frame .follow_left .follow_list{
+    list-style: none;
+}
+body .profile_frame .my_follow_frame .follow_left .follow_list .follow_list_item{
+    line-height: 40px;
+}
+body .profile_frame .my_follow_frame .follow_left .follow_list .follow_list_item .follow_type{
+    list-style: none;
+    line-height: 25px;
+    font-size: 12px;
+}
+body .profile_frame .my_follow_frame .follow_detail{
+    width: 600px;
+    float: left;
+    margin-left: 9px;
+    background-color: white;
+}
+body .profile_frame .my_follow_frame .follow_detail .follow_detail_title{
+    line-height: 38px;
+    margin-left: 10px;
+}
+body .profile_frame .my_follow_frame .follow_detail .follow_detail_content_frame{
+    width: 594px;;
+    margin: 0 auto 10px;
+}
+body .profile_frame .my_follow_frame .follow_detail .follow_detail_content_frame .follow_detail_content_item{
+    width: 265px;
+    height: 110px;
+    float: left;
+    padding: 16px 0 16px 16px;
+    margin: 5px;
+    background-color: #f2f2f5;
+}
+body .profile_frame .my_follow_frame .follow_detail .follow_detail_content_frame .follow_detail_content_item .follow_detail_picture_frame{
+    float: left;
+    width: 80px;
+    height: 110px;
+    border-right: grey solid 1px;
+}
+body .profile_frame .my_follow_frame .follow_detail .follow_detail_content_frame .follow_detail_content_item .follow_detail_picture_frame .follow_detail_picture{
+    width: 50px;
+    height: 50px;
+    margin-top: 30px;
+    border-radius: 50%;
+}
+body .profile_frame .my_follow_frame .follow_detail .follow_detail_content_frame .follow_detail_content_item .follow_detail_content{
+    float: left;
+    margin-left: 10px;
+    height: 100px;
+    width: 150px;
+    padding: 5px;
+}
+body .profile_frame .my_follow_frame .follow_detail .follow_detail_content_frame .follow_detail_content_item .follow_detail_content .follow_detail_username{
+    line-height: 16px;
+    font-size: 14px;
+}
+body .profile_frame .my_follow_frame .follow_detail .follow_detail_content_frame .follow_detail_content_item .follow_detail_content .follow_detail_followed{
+    line-height: 16px;
+    font-size: 14px;
+    margin-top: 5px;
+}
+body .profile_frame .my_follow_frame .follow_detail .follow_detail_content_frame .follow_detail_content_item .follow_detail_content .follow_detail_authentication_information{
+    line-height: 16px;
+    font-size: 14px;
+    margin-top: 5px;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+        <link type="text/css" href="/statics/UIProfile/register.css" rel="stylesheet">
+
+</head>
+<body>
+    <div class="register_frame">
+        <div class="logo_big_frame"></div>
+        <div class="register_form_frame">
+            <div class="register_title">
+                个人注册
+            </div>
+            <div class="register_form">
+                <form id="register_form" method="post" action="/user_register/" enctype="multipart/form-data">
+                <div class="username_frame">
+                    <div class="username_title">手机</div>:
+                    <input type="text" class="username" name="mobilephone" placeholder="请输入您的手机号">
+                    <div class="change_register_type_frame">
+                        或者使用
+                        <a class="change_register_type">邮箱</a>
+                        注册
+                    </div>
+                </div>
+                <div class="password_frame">
+                    <div class="password_title">密码：</div>
+                    <input type="text" class="password" name="password" placeholder="请输入密码">
+                </div>
+                <div class="name_frame">
+                    <div class="name_title">昵称：</div>
+                    <input type="text" class="name" name="name" placeholder="请输入密码">
+                </div>
+                <div class="brief_frame">
+                    <div class="brief_title">简介：</div>
+                    <input type="text" class="brief" name="brief" placeholder="请输入密码">
+                </div>
+                <div class="sex_frame">
+                    <div class="sex_title">性别：</div>
+                    <input type="text" class="sex" name="sex" placeholder="请输入密码">
+                </div>
+                <div class="age_frame">
+                    <div class="age_title">密码：</div>
+                    <input type="text" class="age" name="age" placeholder="请输入密码">
+                </div>
+                <div class="headportrait_frame">
+                    <div class="headportrait_title">头像：</div>
+                    <input type="file"  class="headportrait" name="file" placeholder="请输入密码">
+                </div>
+                <div class="submit_frame">
+                    <a class="submit_button">立即注册</a>
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src='/statics/Plugs/Jquery/jquery-1.8.2.min.js'></script>
+    <script src="/statics/UIProfile/register.js"></script>
+</body>
+</html>

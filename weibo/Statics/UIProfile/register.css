@@ -1,0 +1,58 @@
+body{
+    background-color: #bee1f5;
+}
+a{
+    cursor: pointer;
+}
+body .register_frame .logo_big_frame{
+    width: 200px;
+    height: 72px;
+    margin: 26px auto 0;
+    background-image: url("/statics/image/logo_big.png") ;
+}
+body .register_frame .register_form_frame{
+    margin: 70px auto 0;
+    background-color: white;
+    width: 900px;
+    height: 489px;
+}
+body .register_frame .register_form_frame .register_title{
+    padding-left: 30px;
+    height: 80px;
+    font: 22px/1.125 Arial,Helvetica,sans-serif;
+    line-height: 80px;
+}
+body .register_frame .register_form_frame .register_form{
+    width: 600px;
+    margin-top: 30px;
+    margin-left: 90px;
+}
+body .register_frame .register_form_frame .register_form .username_frame{
+    height: 30px;
+    line-height: 30px;
+}
+body .register_frame .register_form_frame .register_form .username_frame .username_title{
+    float: left;
+}
+body .register_frame .register_form_frame .register_form .username_frame .change_register_type_frame{
+    font-size: 12px;
+}
+body .register_frame .register_form_frame .register_form .username_frame .change_register_type_frame .change_register_type{
+    color: #0a8cd2;
+}
+body .register_frame .register_form_frame .register_form .password_frame{
+    margin-top: 60px;
+}
+body .register_frame .register_form_frame .register_form .password_frame .password_title{
+    float: left;
+}
+body .register_frame .register_form_frame .register_form .submit_frame{
+    margin-top: 60px;
+    margin-left: 60px;
+    width: 200px;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    background-color: #ffb33b;
+    color: white;
+}
